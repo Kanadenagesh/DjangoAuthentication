@@ -43,10 +43,6 @@ def signup(request):
  return render(request,'signup.html',{'f':rf})
 
 
-
-def signout(request):
- return HttpResponse("signout")
-
 @login_required
 def dashboard(request):
  return render(request,'dash.html')
